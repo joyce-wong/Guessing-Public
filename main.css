@@ -1,0 +1,100 @@
+/* Write your CSS code in this file */
+.allitems {
+    text-align: center;
+    align-items: center;
+}
+body{
+    /*background-image: url(https://media.istockphoto.com/photos/forest-wooden-table-background-summer-sunny-meadow-with-green-grass-picture-id1353553203?b=1&k=20&m=1353553203&s=170667a&w=0&h=QTyTGI9tWQluIlkmwW0s7Q4z7R_IT8egpzzHjW3cSas=);
+    background-repeat: no-repeat;*/
+    /* background-color:rgb(208, 241, 230); */
+    background-color: rgb(90, 188, 90);
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-family: 'Allerta Stencil';
+    font-size: 22px;
+    color: whitesmoke;
+    
+}
+h1{
+    color: whitesmoke;
+}
+h2{
+    color: whitesmoke;
+    
+}
+.guess-list{
+    display: flex;
+   justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    gap: 50px;
+    margin: 100px;
+}
+
+/* Medium screens */
+@media all and (max-width: 800px) {
+    .guess-list {
+      /* When on medium sized screens, we center it by evenly distributing empty space around items */
+      justify-content: space-around;
+    }
+  }
+
+  /* Small screens */
+@media all and (max-width: 500px) {
+    .navigation {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+    }
+  }
+
+.guess{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    color: black;
+    border-radius: 50px;
+    border-color: slategray;
+    border-style: dashed;
+    padding: 10px 10px 10px 10px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#guess-field{
+    background: whitesmoke;
+    border: none;
+    border-bottom: 2px solid whitesmoke;
+    background-color: rgb(90, 188, 90);
+    color: whitesmoke;
+    font-size: 20px;
+    margin: 0%;
+    outline: 0;
+    padding: 10px;
+    font-family: 'Allerta Stencil';
+}
+::placeholder{
+    color: whitesmoke;
+    opacity: 1;
+    align-content: center;
+    justify-content: center;
+}
+.ghost-button {
+    color: whitesmoke;
+    background: rgb(90, 188, 90);
+    border: 1px solid whitesmoke;
+    font-size: 17px;
+    padding: 7px 12px;
+    font-weight: normal;
+    margin: 6px 0;
+    margin-right: 12px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Allerta Stencil';
+    min-width: 120px;
+  }
+  .ghost-button:hover, .ghost-button:active {
+    color:#fff;
+    background:pink;
+  }
